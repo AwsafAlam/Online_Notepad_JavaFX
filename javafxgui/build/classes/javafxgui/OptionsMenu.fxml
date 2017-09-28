@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.OptionsMenuController">
+   <top>
+      <MenuBar prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #4285f4;" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu>
+               <graphic>
+                  <JFXHamburger fx:id="haml" />
+               </graphic>
+            </Menu>
+          <Menu text="Edit">
+               <items>
+                  <MenuItem fx:id="Dekete" mnemonicParsing="false" onAction="#onDeletefile" text="Refresh" />
+               </items>
+          </Menu>
+          <Menu text="File">
+            <items>
+              <MenuItem fx:id="New" onAction="#onNew" text="New " />
+              <MenuItem fx:id="Load" onAction="#onLoad" text="Open" />
+              <MenuItem fx:id="Save" onAction="#onSave" text="Save" />
+              <MenuItem fx:id="SaveAs" onAction="#onSaveAs" text="Save As" />
+              <MenuItem text="Export As pdf" />
+              <MenuItem fx:id="Close" onAction="#onClose" text="Exit" />
+            
+            </items>
+          </Menu>
+          <Menu text="Help">
+            <items>
+              <MenuItem fx:id="About" onAction="#onAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </MenuBar>
+   </top>
+   
+   <bottom>
+      <HBox prefHeight="46.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   
+   <center>
+      <TextArea fx:id="TextArea" onKeyPressed="#handletyped" onKeyReleased="#handlereleased" prefHeight="340.0" prefWidth="587.0" wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="250.0" direction="RIGHT" prefHeight="320.0" prefWidth="0.0" resizableOnDrag="true" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

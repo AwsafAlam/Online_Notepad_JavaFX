@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.ChangeSharedController">
+   <children>
+      <JFXButton fx:id="uploaddialogue" buttonType="RAISED" layoutX="55.0" layoutY="271.0" onMouseClicked="#handlechange" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #4b8df9;" text="Done" textFill="WHITE" />
+      <Label layoutX="37.0" layoutY="28.0" prefHeight="37.0" prefWidth="147.0" text="Share with others">
+         <font>
+            <Font name="MS UI Gothic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" layoutX="455.0" layoutY="21.0" onMouseClicked="#handleclose" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cross.png" />
+         </image>
+      </ImageView>
+      <FlowPane fx:id="rootPane" layoutX="19.0" layoutY="164.0" prefHeight="96.0" prefWidth="463.0" />
+      <Label layoutX="44.0" layoutY="127.0" prefHeight="37.0" prefWidth="71.0" text="People">
+         <font>
+            <Font name="MS UI Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="users" layoutX="37.0" layoutY="73.0" onKeyPressed="#handleshared" prefHeight="37.0" prefWidth="365.0" promptText="Enter names to share file" />
+      <Button fx:id="newshared" layoutX="403.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#handlenewshared" prefHeight="37.0" prefWidth="52.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

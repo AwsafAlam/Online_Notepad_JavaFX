@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="250.0" style="-fx-background-color: #888888;" stylesheets="@navbar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="141.0" fitWidth="250.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/navbarbg.png" />
+         </image>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton fx:id="btn1" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="Home" textAlignment="JUSTIFY" />
+      <JFXButton fx:id="btn2" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="Log Out" />
+      <JFXButton fx:id="btn3" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="Refresh" />
+      <JFXButton fx:id="btn4" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="Change Access" />
+      <JFXButton fx:id="btn5" cancelButton="true" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="Exit" />
+   </children>
+</VBox>

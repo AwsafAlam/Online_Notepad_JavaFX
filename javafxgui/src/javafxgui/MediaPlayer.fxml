@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.MediaPlayerController">
+   <center>
+      <MediaView fx:id="mv" fitHeight="550.0" fitWidth="1300.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="1300.0" style="-fx-background-color: silver;" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <ImageView fx:id="stop" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#handlestop" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/stop.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="slow" fitHeight="40.0" fitWidth="40.0" layoutX="600.0" layoutY="40.0" onMouseClicked="#handlelslow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ff.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="pause" fitHeight="40.0" fitWidth="40.0" layoutX="520.0" layoutY="30.0" onMouseClicked="#handlepause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Pause.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="load" fitHeight="40.0" fitWidth="40.0" layoutX="620.0" layoutY="40.0" onMouseClicked="#handleload" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/play.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="fast" fitHeight="40.0" fitWidth="40.0" layoutX="640.0" layoutY="40.0" onMouseClicked="#handlefast" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/fast.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="reload" fitHeight="40.0" fitWidth="40.0" layoutX="760.0" layoutY="40.0" onMouseClicked="#handlereload" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/reload.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </bottom>
+</BorderPane>

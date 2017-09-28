@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.RegisterController">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="1300.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="1300.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/images.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="470.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="379.0" prefWidth="479.0" style="-fx-background-color: #ffbb00; -fx-background-size: 100;">
+               <children>
+                  <JFXTextField fx:id="Username" layoutX="68.0" layoutY="37.0" maxWidth="329.0" minWidth="209.0" prefHeight="45.0" prefWidth="327.0" promptText="Username" />
+                  <JFXPasswordField fx:id="Password" layoutX="70.0" layoutY="134.0" maxWidth="209.0" minWidth="145.0" prefHeight="40.0" prefWidth="160.0" promptText="Password" />
+                  <JFXPasswordField fx:id="Retypepassword" layoutX="237.0" layoutY="134.0" maxWidth="209.0" minWidth="146.0" prefHeight="40.0" prefWidth="160.0" promptText="Retype password" />
+                  <JFXCheckBox fx:id="gendermale" layoutX="129.0" layoutY="245.0" text="Male" />
+                  <JFXTextField fx:id="Email" layoutX="75.0" layoutY="188.0" maxWidth="340.0" minWidth="165.0" prefHeight="40.0" prefWidth="326.0" promptText="Email" />
+                  <JFXCheckBox fx:id="genderfemale" layoutX="261.0" layoutY="245.0" text="Female" />
+                  <JFXTextField fx:id="Firstname" layoutX="70.0" layoutY="88.0" maxWidth="209.0" minWidth="158.0" prefHeight="40.0" prefWidth="160.0" promptText="Firstname" />
+                  <JFXTextField fx:id="Lastname" layoutX="237.0" layoutY="88.0" maxWidth="209.0" minWidth="135.0" prefHeight="40.0" prefWidth="160.0" promptText="Last name" />
+                  <JFXButton fx:id="back" buttonType="RAISED" layoutX="261.0" layoutY="297.0" onMouseClicked="#handleback" prefHeight="37.0" prefWidth="73.0" ripplerFill="#e2e5ebde" style="-fx-background-color: #3559ba;" text="Back">
+                     <font>
+                        <Font name="SansSerif Regular" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="confirm" buttonType="RAISED" layoutX="123.0" layoutY="297.0" onMouseClicked="#handleconfirm" prefHeight="37.0" prefWidth="73.0" ripplerFill="#e2e5ebde" style="-fx-background-color: #3559ba;" text="Confirm">
+                     <font>
+                        <Font name="SansSerif Regular" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Label fx:id="label" alignment="CENTER" layoutX="78.0" layoutY="5.0" lineSpacing="1.0" prefHeight="31.0" prefWidth="567.0" textAlignment="JUSTIFY" textFill="#fc0606">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

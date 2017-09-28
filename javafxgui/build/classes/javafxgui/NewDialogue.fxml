@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="300.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.NewDialogueController">
+   <children>
+      <TextField fx:id="documentname" layoutX="40.0" layoutY="35.0" prefHeight="37.0" prefWidth="220.0" text="Untitled Document" />
+      <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="111.0" layoutY="169.0" onMouseClicked="#handlecanceldialogue" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: white;" text="Cancel" textFill="#808080" />
+      <JFXButton fx:id="savedialogue" buttonType="RAISED" layoutX="209.0" layoutY="169.0" onMouseClicked="#handlesavedialogue" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: #4b8df9;" text="Save" textFill="WHITE" />
+      <Label fx:id="info" layoutX="17.0" layoutY="124.0" prefHeight="43.0" prefWidth="263.0" textFill="#8a0d0d">
+         <font>
+            <Font name="Lucida Console" size="11.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="users" layoutX="34.0" layoutY="95.0" maxWidth="189.0" minWidth="189.0" prefHeight="31.0" prefWidth="189.0" promptText="Share With" />
+      <ImageView fx:id="sharewith" fitHeight="30.0" fitWidth="30.0" focusTraversable="true" layoutX="223.0" layoutY="96.0" onMouseClicked="#handleshared" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/sendbtn.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

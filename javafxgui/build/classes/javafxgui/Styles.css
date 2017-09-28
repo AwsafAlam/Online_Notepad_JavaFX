@@ -1,0 +1,17 @@
+.label:selected{
+    
+    
+    -fx-background-color :red;
+    
+}
+.label:hover{
+    
+    -fx-background-color :skyblue;
+    -fx-text-fill: #FFFFFF;
+    
+}
+.label{
+    -fx-background-color :darkcyan;
+    
+    
+}

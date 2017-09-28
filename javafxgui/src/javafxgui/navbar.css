@@ -1,0 +1,18 @@
+.button:hover{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-text-alignment: center;
+}
+.button{
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    
+    
+}
+.jfx-hamburger StackPane{
+    -fx-pref-width :40px;
+    -fx-pref-height :5px;
+    -fx-background-color: #17233d;
+    
+    
+}

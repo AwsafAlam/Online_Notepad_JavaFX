@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="1300.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #17233d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.HomeController">
+   <children>
+      <HBox alignment="TOP_RIGHT" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" opacity="0.92" prefHeight="110.0" prefWidth="1300.0" spacing="25.0" style="-fx-background-color: #4285f4;" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="20.0" left="25.0" right="20.0" top="30.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#726464" spread="0.26" />
+         </effect>
+         <children>
+            <ImageView fx:id="options" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleOptions" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Options.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="chatbtn" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handlechatbox" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Folder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="38.0" fitWidth="38.0" onMouseClicked="#handleback" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Back.png" />
+               </image>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#30305cbb" height="11.86" radius="2.465" width="0.0" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="newdoc" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#newdoc" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <FlowPane fx:id="rootPane" layoutX="-1.0" layoutY="110.0" prefHeight="490.0" prefWidth="1302.0">
+         <children>
+            <TableView fx:id="tableview" editable="true" onDragDropped="#handleDropped" onDragOver="#handleDragOver" onMouseClicked="#handletablebiew" prefHeight="490.0" prefWidth="1290.0" stylesheets="@Table.css">
+              <columns>
+                <TableColumn fx:id="filenamecol" minWidth="-Infinity" prefWidth="281.0" text="Name" />
+                <TableColumn fx:id="ownercol" minWidth="-Infinity" prefWidth="116.0" text="Owner" />
+                  <TableColumn fx:id="datecol" minWidth="-Infinity" prefWidth="203.0" text="Last Modified" />
+                  <TableColumn fx:id="sizecol" minWidth="-Infinity" prefWidth="110.0" text="File size" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </FlowPane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="250.0" prefHeight="614.0" prefWidth="250.0" />
+      <JFXHamburger fx:id="haml" layoutX="14.0" layoutY="14.0" stylesheets="@navbar.css" />
+      <CustomTextField id="Txt" fx:id="searchbar" layoutX="300.0" layoutY="25.0" prefHeight="40.0" prefWidth="500.0" promptText="Search Drive" style="-fx-background-color: skyblue;" stylesheets="@Txtfield.css">
+         <padding>
+            <Insets bottom="10.0" left="45.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </CustomTextField>
+   </children>
+</AnchorPane>

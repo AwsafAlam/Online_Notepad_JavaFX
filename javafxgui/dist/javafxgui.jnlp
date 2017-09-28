@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javafxgui.jnlp">
+  <information>
+    <title>javafxgui</title>
+    <vendor>user</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="javafxgui.jar" size="779720" download="eager" />
+    <jar href="lib\activation.jar" size="55147" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\derby.jar" size="3230946" download="eager" />
+    <jar href="lib\derbyclient.jar" size="587986" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2181940" download="eager" />
+    <jar href="lib\mail.jar" size="462098" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="javafxgui" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxgui.Javafxgui"  name="javafxgui" />
+  <update check="always"/>
+</jnlp>

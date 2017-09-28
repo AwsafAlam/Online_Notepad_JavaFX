@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="SplashScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.SplashController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Plash_Screen.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXProgressBar fx:id="pb" layoutX="173.0" layoutY="224.0" prefHeight="90.0" prefWidth="250.0" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

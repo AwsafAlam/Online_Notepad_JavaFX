@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxgui.BrowsefileController">
+   <children>
+      <TextField fx:id="documentname" layoutX="70.0" layoutY="79.0" prefHeight="31.0" prefWidth="359.0" promptText="Browse Files" />
+      <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="307.0" layoutY="258.0" onMouseClicked="#handlcancle" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: white;" text="Cancel" textFill="#808080" />
+      <JFXButton fx:id="uploaddialogue" buttonType="RAISED" layoutX="421.0" layoutY="258.0" onMouseClicked="#handleuplod" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #4b8df9;" text="Upload" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/upload.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXTextField fx:id="users" layoutX="70.0" layoutY="175.0" maxWidth="359.0" minWidth="189.0" prefHeight="31.0" prefWidth="359.0" promptText="Share With" />
+      <Label fx:id="SharedUses" layoutX="42.0" layoutY="204.0" prefHeight="51.0" prefWidth="466.0">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="browse" layoutX="441.0" layoutY="78.0" onMouseClicked="#handlebrowse" prefHeight="33.0" prefWidth="86.0" ripplerFill="#cdbbbbed" style="-fx-background-color: #352b2b;" text="Browse" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Browse.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="savedialogue1" buttonType="RAISED" layoutX="441.0" layoutY="172.0" onMouseClicked="#handleshared" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: #4b0dc9;" text="Share" textFill="WHITE" />
+      
+   </children>
+</Pane>
